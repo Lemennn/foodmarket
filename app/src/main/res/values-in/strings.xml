@@ -7,12 +7,25 @@
     <string name="ic_shop">ic_shop</string>
 
     <!-- Text View -->
+    <string name="full_name">Nama Lengkap</string>
     <string name="email_address">Alamat Email</string>
     <string name="password">Kata Sandi</string>
+    <string name="phone">Nomor Ponsel.</string>
+    <string name="address">Alamat</string>
+    <string name="house">Nomor Rumah.</string>
+    <string name="city">Kota</string>
     <string name="edittext_email">Alamat email</string>
-    <string name="edittext_password">password</string>
+    <string name="edittext_password">Kata Sandi</string>
+    <string name="edittext_fullname">Nama Lengkap</string>
+    <string name="edittext_phone">Nomor ponsel</string>
+    <string name="edittext_address">Alamat</string>
+    <string name="edittext_house">Nomor rumah</string>
+    <string name="edittext_city">Kota</string>
     <string name="btn_signin">Masuk</string>
     <string name="btn_signup">Buat Akun Baru</string>
+    <string name="btn_continue">Berikutnya</string>
+    <string name="btn_signup_now">Daftar Sekarang</string>
 
     <!--  Common  -->
+    <string name="profile_picture">Foto Profil</string>
 </resources>

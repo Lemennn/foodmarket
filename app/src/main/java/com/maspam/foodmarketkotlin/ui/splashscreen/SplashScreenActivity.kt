@@ -7,6 +7,7 @@ import android.os.Handler
 import android.os.Looper
 import com.maspam.foodmarketkotlin.MainActivity
 import com.maspam.foodmarketkotlin.R
+import com.maspam.foodmarketkotlin.ui.auth.AuthActivity
 
 class SplashScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +21,7 @@ class SplashScreenActivity : AppCompatActivity() {
        */
 
         Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this, MainActivity::class.java));
+            startActivity(Intent(this, AuthActivity::class.java));
         }, 3000)
 
 

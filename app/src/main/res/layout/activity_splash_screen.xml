@@ -20,7 +20,7 @@
 
     <TextView
         android:id="@+id/tv_foodmarket"
-        style="@style/TextView.PoppinsNormal32sp020202"
+        style="@style/TextView.PoppinsBold32sp020202"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_name_noSpace"

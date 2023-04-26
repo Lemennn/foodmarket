@@ -6,12 +6,25 @@
     <string name="ic_shop">ic_shop</string>
 
     <!-- Component View -->
+    <string name="full_name">Full Name</string>
     <string name="email_address">Email Address</string>
     <string name="password">Password</string>
+    <string name="phone">Phone No.</string>
+    <string name="address">Address</string>
+    <string name="house">House No.</string>
+    <string name="city">City</string>
     <string name="edittext_email">Type your email address</string>
     <string name="edittext_password">Type your password</string>
+    <string name="edittext_fullname">Type your fullname</string>
+    <string name="edittext_phone">Type your phone</string>
+    <string name="edittext_address">Type your address</string>
+    <string name="edittext_house">Type your house</string>
+    <string name="edittext_city">Type your city</string>
     <string name="btn_signin">Sign In</string>
     <string name="btn_signup">Create New Account</string>
+    <string name="btn_continue">Continue</string>
+    <string name="btn_signup_now">Sign Up Now</string>
 
     <!--  Common  -->
+    <string name="profile_picture">Profile Picture</string>
 </resources>
