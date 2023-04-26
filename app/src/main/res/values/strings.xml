@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Food Market</string>
+    <string name="app_name_noSpace">FoodMarket</string>
+
+    <!-- Icon Name -->
+    <string name="ic_shop">ic_shop</string>
+
+    <!-- Component View -->
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="edittext_email">Type your email address</string>
+    <string name="edittext_password">Type your password</string>
+    <string name="btn_signin">Sign In</string>
+    <string name="btn_signup">Create New Account</string>
+
+    <!--  Common  -->
+</resources>

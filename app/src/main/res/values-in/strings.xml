@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Toko Buah</string>
+    <string name="app_name_noSpace">TokoBuah</string>
+
+    <!-- Icon Name -->
+    <string name="ic_shop">ic_shop</string>
+
+    <!-- Text View -->
+    <string name="email_address">Alamat Email</string>
+    <string name="password">Kata Sandi</string>
+    <string name="edittext_email">Alamat email</string>
+    <string name="edittext_password">password</string>
+    <string name="btn_signin">Masuk</string>
+    <string name="btn_signup">Buat Akun Baru</string>
+
+    <!--  Common  -->
+</resources>
