@@ -24,7 +24,12 @@
     <string name="btn_signup">Create New Account</string>
     <string name="btn_continue">Continue</string>
     <string name="btn_signup_now">Sign Up Now</string>
+    <string name="btn_signup_complete">Find Foods</string>
+    <string name="tv_complete">Yeay! Completed</string>
+    <string name="tv_subcomplete">Now you are able to ordersome foods as a self-reward</string>
 
     <!--  Common  -->
     <string name="profile_picture">Profile Picture</string>
+    <string name="title_toolbar_signin">Sign In</string>
+    <string name="subtitle_toolbar_signin">Find your best ever meal</string>
 </resources>

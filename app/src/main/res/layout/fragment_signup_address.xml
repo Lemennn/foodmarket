@@ -12,10 +12,9 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="#FFFF"
-        android:layout_marginTop="24dp"
         android:paddingHorizontal="24dp"
-        android:paddingTop="26dp"
-        tools:context=".ui.auth.signin.SignInFragment">
+        android:paddingTop="10dp"
+        tools:context=".ui.auth.signup.SignUpAddressFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -92,10 +91,11 @@
             />
 
     <Button
+        android:id="@+id/btn_signUpNow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="@string/btn_continue"
+        android:text="@string/btn_signup_now"
         android:background="@drawable/shape_8_ffc700"
         style="@style/Button.Primary"
         />

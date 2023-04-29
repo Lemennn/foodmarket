@@ -25,7 +25,13 @@
     <string name="btn_signup">Buat Akun Baru</string>
     <string name="btn_continue">Berikutnya</string>
     <string name="btn_signup_now">Daftar Sekarang</string>
+    <string name="btn_signup_complete">Cari Makanan</string>
+    <string name="tv_complete">Hore! Selesai</string>
+    <string name="tv_subcomplete">Sekarang Anda dapat memesan beberapa makanan sebagai hadiah sendiri</string>
+
 
     <!--  Common  -->
     <string name="profile_picture">Foto Profil</string>
+    <string name="title_toolbar_signin">Masuk</string>
+    <string name="subtitle_toolbar_signin">Cari makanan terbaik anda</string>
 </resources>

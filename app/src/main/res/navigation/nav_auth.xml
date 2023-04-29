@@ -8,18 +8,39 @@
     <fragment
         android:id="@+id/fragmentSignIn"
         android:name="com.maspam.foodmarketkotlin.ui.auth.signin.SignInFragment"
-        tools:layout="@layout/fragment_signin"
-        />
+        tools:layout="@layout/fragment_signin">
+
+        <action
+            android:id="@+id/action_signUp"
+            app:destination="@id/fragmentSignUp"
+            />
+
+    </fragment>
 
     <fragment
         android:id="@+id/fragmentSignUp"
         android:name="com.maspam.foodmarketkotlin.ui.auth.signup.SignUpFragment"
-        tools:layout="@layout/fragment_signup"
-        />
+        tools:layout="@layout/fragment_signup">
+
+        <action
+            android:id="@+id/action_signUp_address"
+            app:destination="@id/fragmentSignUpAddress"
+            />
+
+    </fragment>
 
     <fragment
         android:id="@+id/fragmentSignUpAddress"
         android:name="com.maspam.foodmarketkotlin.ui.auth.signup.SignUpAddressFragment"
-        tools:layout="@layout/fragment_signup_address"
-        />
+        tools:layout="@layout/fragment_signup_address">
+
+        <action
+            android:id="@+id/action_signUp_success"
+            app:destination="@id/fragmentSignUpSuccess" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentSignUpSuccess"
+        android:name="com.maspam.foodmarketkotlin.ui.auth.signup.SignUpSuccessFragment"
+        tools:layout="@layout/fragment_signup_success"/>
 </navigation>
