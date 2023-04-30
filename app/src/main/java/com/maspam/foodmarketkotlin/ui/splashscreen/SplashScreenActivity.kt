@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import com.maspam.foodmarketkotlin.MainActivity
 import com.maspam.foodmarketkotlin.R
 import com.maspam.foodmarketkotlin.ui.auth.AuthActivity
 

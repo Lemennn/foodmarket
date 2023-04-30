@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.maspam.foodmarketkotlin.databinding.FragmentSigninBinding
+import com.maspam.foodmarketkotlin.ui.MainActivity
 import com.maspam.foodmarketkotlin.ui.auth.AuthActivity
 
 class SignInFragment : Fragment(){
@@ -29,6 +30,12 @@ class SignInFragment : Fragment(){
             val signUp = Intent(activity, AuthActivity::class.java)
             signUp.putExtra("page_request", 2)
             startActivity(signUp)
+        }
+
+        binding?.btnSignIn?.setOnClickListener {
+            val signIn = Intent(activity, MainActivity::class.java)
+            startActivity(signIn)
+            activity?.finish()
         }
     }
 
