@@ -20,8 +20,7 @@ class SignInFragment : Fragment(){
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentSigninBinding.inflate(inflater, container, false)
-        val view = binding?.root
-        return view
+        return binding?.root
     }
 
     override fun onResume() {
@@ -39,4 +38,8 @@ class SignInFragment : Fragment(){
         }
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
+    }
 }

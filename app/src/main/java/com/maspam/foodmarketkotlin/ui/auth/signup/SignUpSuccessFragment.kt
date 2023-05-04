@@ -11,7 +11,7 @@ import com.maspam.foodmarketkotlin.databinding.FragmentSignupSuccessBinding
 class SignUpSuccessFragment : Fragment() {
 
     private var _binding: FragmentSignupSuccessBinding? = null
-    private var binding = _binding
+    private val binding get() = _binding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -23,5 +23,10 @@ class SignUpSuccessFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
     }
 }

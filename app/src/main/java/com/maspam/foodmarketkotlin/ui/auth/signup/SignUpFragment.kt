@@ -14,25 +14,15 @@ import com.maspam.foodmarketkotlin.ui.auth.AuthActivity
 class SignUpFragment : Fragment() {
 
     private var _binding : FragmentSignupBinding? = null
-    private var binding = _binding
+    private val binding get() = _binding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentSignupBinding.inflate(inflater, container, false)
+        _binding = FragmentSignupBinding.inflate(inflater, container, false)
         return binding?.root
-    }
-
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-
-        binding?.btnContinue?.setOnClickListener {
-            Navigation.findNavController(it)
-                .navigate(R.id.action_signUp_address, null)
-            (activity as AuthActivity ).toolbarSignUpAddress()
-        }
     }
 
     override fun onResume() {
@@ -43,5 +33,16 @@ class SignUpFragment : Fragment() {
                 .navigate(R.id.action_signUp_address, null)
             (activity as AuthActivity ).toolbarSignUpAddress()
         }
+
+        binding?.btnContinue?.setOnClickListener {
+            Navigation.findNavController(it)
+                .navigate(R.id.action_signUp_address, null)
+            (activity as AuthActivity ).toolbarSignUpAddress()
+        }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
     }
 }
