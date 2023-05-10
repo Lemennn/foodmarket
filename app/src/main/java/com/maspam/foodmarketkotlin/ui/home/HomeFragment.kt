@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -11,7 +12,7 @@ import com.maspam.foodmarketkotlin.databinding.FragmentHomeBinding
 import com.maspam.foodmarketkotlin.model.dummy.HomeModel
 
 
-class HomeFragment : Fragment(), HomeAdapter.ItemAdapterCallback {
+class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
 
@@ -31,10 +32,13 @@ class HomeFragment : Fragment(), HomeAdapter.ItemAdapterCallback {
         return binding.root
     }
 
+
     override fun onResume() {
         super.onResume()
 
         startRecycleView()
+
+        startPagerAdapter()
 
     }
 
@@ -55,11 +59,21 @@ class HomeFragment : Fragment(), HomeAdapter.ItemAdapterCallback {
     private fun startRecycleView(){
         binding.rvHorizontal.apply {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-            adapter = HomeAdapter(dataDummy(), this@HomeFragment )
+            adapter = HomeAdapter(dataDummy()){dataHomeModel, position ->
+                Toast.makeText(context, "Contoh Toast", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 
-    override fun onClick(v: View, data: HomeModel) {
-        TODO("Not yet implemented")
+    private fun startPagerAdapter() {
+        binding.apply {
+            val adapter = SectionPagerAdapter(
+                childFragmentManager
+            )
+
+            viewPager.adapter = adapter
+            tabLayout.setupWithViewPager(viewPager)
+        }
     }
+
 }

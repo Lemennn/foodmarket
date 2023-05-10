@@ -1,4 +1,4 @@
-package com.maspam.foodmarketkotlin.ui.home
+package com.maspam.foodmarketkotlin.ui.profile.account
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,17 +7,18 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.maspam.foodmarketkotlin.R
 import com.maspam.foodmarketkotlin.databinding.ItemHomeHorizontalBinding
+import com.maspam.foodmarketkotlin.databinding.ItemMenuProfileBinding
 import com.maspam.foodmarketkotlin.model.dummy.HomeModel
+import com.maspam.foodmarketkotlin.model.dummy.ProfileMenuModel
 
 
-
-class HomeAdapter(
-    private val listAdapter: List<HomeModel>,
-    private var callback : (HomeModel, Int) -> Unit
-) : RecyclerView.Adapter<HomeAdapter.ViewHolder>() {
+class ProfileAccountFragmentAdapter(
+    private val listAdapter: List<ProfileMenuModel>,
+    private var callback : (ProfileMenuModel, Int) -> Unit
+) : RecyclerView.Adapter<ProfileAccountFragmentAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = ItemHomeHorizontalBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val view = ItemMenuProfileBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(view)
     }
 
@@ -33,18 +34,10 @@ class HomeAdapter(
         return listAdapter.size
     }
 
-    inner class ViewHolder (var binding: ItemHomeHorizontalBinding) : RecyclerView.ViewHolder(binding.root){
+    inner class ViewHolder (var binding: ItemMenuProfileBinding) : RecyclerView.ViewHolder(binding.root){
 
-        fun getBind (data: HomeModel) {
+        fun getBind (data: ProfileMenuModel) {
             binding.tvTitle.text = data.title
-            binding.ratingBar.rating = data.rating
-
-            Glide.with(binding.root)
-                .load(data.src)
-                .placeholder(R.drawable.img)
-                .error(R.drawable.img)
-                .into(binding.ivPoster)
-
         }
     }
 
